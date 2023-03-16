@@ -1,0 +1,38 @@
+//entidad cuenta:
+class  cuenta {
+	double saldo;
+	int agencia;
+	int numero;
+	Cliente titular;
+	
+	public void depositar (double valorRecibido){
+		//uso this
+		this.saldo = this.saldo + valorRecibido;
+		
+	}
+	
+	public boolean retirar (double valorRecibido) {
+		if (this.saldo >= valorRecibido) {
+			this.saldo = this.saldo - valorRecibido;
+			return true;
+			
+		}
+		else {
+			 System.out.println("No puedes retirar más de: " +this.saldo);
+			return false;
+		}
+			
+	}
+	
+	public boolean transferir (double valorRecibido , cuenta cuenta) {
+		if (this.saldo >= valorRecibido) {
+			this.saldo = this.saldo - valorRecibido;
+			cuenta.depositar(valorRecibido);
+			return true;
+			
+		}
+
+		return false;
+
+	}
+}
