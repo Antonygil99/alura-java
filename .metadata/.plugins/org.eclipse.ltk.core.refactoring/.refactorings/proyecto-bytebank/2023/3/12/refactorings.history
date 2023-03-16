@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;cuenta.obtenerSaldo()&apos; to &apos;getSaldo&apos;&#x0D;&#x0A;- Original project: &apos;proyecto-bytebank&apos;&#x0D;&#x0A;- Original element: &apos;cuenta.obtenerSaldo()&apos;&#x0D;&#x0A;- Renamed element: &apos;cuenta.getSaldo()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;obtenerSaldo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;{cuenta.java[cuenta~obtenerSaldo" name="getSaldo" references="true" stamp="1678852231253" version="1.0"/>
+</session>

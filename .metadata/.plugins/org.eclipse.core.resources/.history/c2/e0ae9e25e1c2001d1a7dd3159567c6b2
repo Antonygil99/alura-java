@@ -1,0 +1,10 @@
+
+public class PruebaAcceso {
+	public static void main(String[] args) {
+		cuenta cuenta = new cuenta();
+		cuenta.saldo = 200;
+		
+		
+		
+	}
+}

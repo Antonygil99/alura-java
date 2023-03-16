@@ -1,0 +1,21 @@
+
+public class pruebaMetodos {
+	public static void main(String[] args) {
+		
+		//implementación de método
+		cuenta miCuenta = new cuenta();
+		miCuenta.saldo = 300; //ahora yo tengo 300 
+		miCuenta.depositar(200);// ahora tengo 300 + 200 = 500
+		System.out.println(miCuenta.saldo);// imprime 500
+		
+		//Referenciando objetos
+		miCuenta.retirar(600);
+		System.out.println(miCuenta.saldo);
+		
+		cuenta cuentaDeJimena = new cuenta();
+		cuentaDeJimena.depositar(1000);
+		cuentaDeJimena.transferir(200, miCuenta);
+		System.out.println("Jimena tiene: " + cuentaDeJimena.saldo);
+		System.out.println("Mi cuenta tiene: " + miCuenta.saldo);
+	}
+}
