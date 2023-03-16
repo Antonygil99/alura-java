@@ -3,7 +3,7 @@ public class pruebaMetodos {
 	public static void main(String[] args) {
 		
 		//implementación de método
-		cuenta miCuenta = new cuenta();
+		cuenta miCuenta = new cuenta(12);
 		miCuenta.depositar(300); //ahora yo tengo 300 
 		miCuenta.depositar(200);// ahora tengo 300 + 200 = 500
 		System.out.println(miCuenta.getSaldo());// imprime 500
@@ -13,7 +13,7 @@ public class pruebaMetodos {
 		//el valor a retirar es mayor al valor del saldo de mi cuenta
 		System.out.println(miCuenta.getSaldo());
 		
-		cuenta cuentaDeJimena = new cuenta();//Creo una nueva cuenta
+		cuenta cuentaDeJimena = new cuenta(14);//Creo una nueva cuenta
 		cuentaDeJimena.depositar(1000);//Jimena tiene 1000
 		cuentaDeJimena.transferir(200, miCuenta);//Jimena me transfiere 200
 		System.out.println("Jimena tiene: " + cuentaDeJimena.getSaldo());//Jimena tiene 800
