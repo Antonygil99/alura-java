@@ -1,13 +1,12 @@
 
-public class Funcionario {
+public class Gerente {
 	private String nombre;
     private String Documento;
 	private double Salario;
-	private int tipo;
 	
 	
 	//--------------Contructor----------------------------
-	public Funcionario() {
+	public Gerente() {
 		// TODO Auto-generated constructor stub
 	}
 	//------------- getters and setters declared----------
@@ -44,26 +43,7 @@ public class Funcionario {
 	
 	//Bonificacion del 10%
 	public double getBonificación() {
-		if (this.tipo == 1) {
-			return this.Salario;
-		}else if(this.tipo == 0) {
-			return this.Salario * 0.1;
-		}
-		else {
-			return 0;
-		}
+		return this.Salario;
 	}
-
-
-	public int getTipo() {
-		return tipo;
-	}
-
-
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
-	}
-	
-	
 	
 }
