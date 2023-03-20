@@ -7,9 +7,5 @@ public class ControlBonificacion {
 		System.out.println("calculo actual: " + this.suma);
 		return this.suma;
 	}
-	public double registrarSalario(Gerente gerente) {
-		this.suma = gerente.getBonificación() + this.suma;
-		System.out.println("calculo actual: " + this.suma);
-		return this.suma;
-	}
+
 }
