@@ -14,7 +14,7 @@ public class Gerente extends Funcionario{
 		return clave == "AluraCurso";
 	}
 	//SOBREESCRITURA DE METODO - REESCRIBIENDO EL METODO EN LA CLASE HIJA
-	public double getBonificacion() {
+	public double getBonificación() {
 		//Ahora el gerente gana el porcentaje aplicado al funcionario más su salario
 		return super.getSalario() + super.getBonificación();
 	}

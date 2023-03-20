@@ -9,6 +9,6 @@ public class TestGerente {
 		
 		
 		System.out.println(gerente.login("AluraCurso"));
-		System.out.println(gerente.getBonificacion());
+		System.out.println(gerente.getBonificación());
 	}
 }

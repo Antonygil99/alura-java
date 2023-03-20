@@ -12,9 +12,7 @@ public class TestReferencias {
 		
 		funcionario.setSalario(2000);
 		gerente.setSalario(10000);
-		
-		
-		
+
 		
 	}
 }
