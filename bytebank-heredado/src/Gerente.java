@@ -15,6 +15,7 @@ public class Gerente extends Funcionario{
 	}
 	//SOBREESCRITURA DE METODO - REESCRIBIENDO EL METODO EN LA CLASE HIJA
 	public double getBonificación() {
+		System.out.println("EJECUTANDO DESDE GERENTE");
 		//Ahora el gerente gana el porcentaje aplicado al funcionario más su salario
 		return super.getSalario() + super.getBonificación();
 	}
