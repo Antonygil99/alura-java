@@ -4,4 +4,6 @@
     <fullyQualifiedTypeName name="Cliente"/>
     <fullyQualifiedTypeName name="CrearCuenta"/>
     <fullyQualifiedTypeName name="cuenta"/>
+    <fullyQualifiedTypeName name="Funcionario"/>
+    <fullyQualifiedTypeName name="Gerente"/>
 </qualifiedTypeNameHistroy>

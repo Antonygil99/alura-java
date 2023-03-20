@@ -44,14 +44,7 @@ public class Funcionario {
 	
 	//Bonificacion del 10%
 	public double getBonificación() {
-		if (this.tipo == 1) {
-			return this.Salario;
-		}else if(this.tipo == 0) {
-			return this.Salario * 0.1;
-		}
-		else {
-			return 0;
-		}
+		return this.Salario * 0.1;
 	}
 
 
