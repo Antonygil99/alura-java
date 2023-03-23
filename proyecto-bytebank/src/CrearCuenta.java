@@ -4,12 +4,12 @@ public class CrearCuenta {
 		
 	
 	  //        Variable     |	  Valor
-		cuenta primeraCuenta = new cuenta(11); //2c7b84de
+		Cuenta primeraCuenta = new Cuenta(11); //2c7b84de
 		
 		primeraCuenta.depositar(1000);
 		System.out.println(primeraCuenta.getSaldo());
 		
-		cuenta segundaCuenta = new cuenta(22);
+		Cuenta segundaCuenta = new Cuenta(22);
 		segundaCuenta.depositar(3000); 
 		System.out.println(segundaCuenta.getSaldo());
 		System.out.println(primeraCuenta.getSaldo());

@@ -2,7 +2,7 @@
 public class testReferencia3 {
 	
 	public static void main(String[] args) {
-		cuenta cuentaDeDiego = new cuenta(333);
+		Cuenta cuentaDeDiego = new Cuenta(333);
 		Cliente diego = new Cliente();
 		//cuentaDeDiego.titular = cliente;
 		

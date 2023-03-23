@@ -1,5 +1,6 @@
 //entidad cuenta:
-class  cuenta {
+public class  Cuenta {
+	
 	private double saldo;//encapsulamiento, nadie puede modificar directamente el saldo
 	private int agencia;
 	private int numero;
@@ -10,17 +11,18 @@ class  cuenta {
 	
 	
 	//constructor nos obliga a brindar datos
-	public cuenta(int agencia) {//constructor desde aquí podemos manipular el objeto cuenta
-
-		if (agencia <= 0) {
-			System.out.println("No se permite 0");
-			this.agencia = 1;
-		}else {
-			this.agencia = agencia;
-		}
-		total++;
-		System.out.println("Se han creado: " + total +" cuentas");
+	public Cuenta(int agencia, int numero) {//constructor desde aquí podemos manipular el objeto cuenta
+		this.agencia=agencia;
+		this.numero = numero;
+//		if (agencia <= 0) {
+//			System.out.println("No se permite 0");
+//			this.agencia = 1;
+//		}else {
+//			this.agencia = agencia;
+//		}
 		
+		System.out.println("Se han creado: " + total +" cuentas");
+		Cuenta.total++;
 		
 	}
 	
@@ -44,11 +46,11 @@ class  cuenta {
 			
 	}
 	
-	public boolean transferir (double valorRecibido , cuenta cuenta) {
+	public boolean transferir (double valorRecibido , Cuenta Cuenta) {
 		if (this.saldo >= valorRecibido) {
 			this.saldo = this.saldo - valorRecibido;
 			//Referenciando objetos
-			cuenta.depositar(valorRecibido);//depositamos el valor a la cuenta deseada
+			Cuenta.depositar(valorRecibido);//depositamos el valor a la cuenta deseada
 			return true;
 			
 		}

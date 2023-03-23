@@ -6,4 +6,7 @@
     <fullyQualifiedTypeName name="cuenta"/>
     <fullyQualifiedTypeName name="Funcionario"/>
     <fullyQualifiedTypeName name="Gerente"/>
+    <fullyQualifiedTypeName name="ControlBonificacion"/>
+    <fullyQualifiedTypeName name="Contador"/>
+    <fullyQualifiedTypeName name="CuentaCorriente"/>
 </qualifiedTypeNameHistroy>

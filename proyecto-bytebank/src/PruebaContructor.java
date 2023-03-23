@@ -2,10 +2,10 @@
 public class PruebaContructor {
 	public static void main(String[] args) {
 		//clase  		|   instancia
-		cuenta cuenta =  new cuenta(555);
-		cuenta cuenta2 = new cuenta(556);
+		Cuenta Cuenta =  new Cuenta(555);
+		Cuenta cuenta2 = new Cuenta(556);
 
 		
-		System.out.println(cuenta.getAgencia());
+		System.out.println(Cuenta.getAgencia());
 	}
 }
