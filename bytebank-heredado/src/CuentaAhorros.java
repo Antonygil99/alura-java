@@ -8,7 +8,7 @@ public class CuentaAhorros extends Cuenta {
 	@Override
 	public void depositar(double valorRecibido) {
 		// TODO Auto-generated method stub
-		super.saldo = super.saldo + valorRecibido;
+		this.saldo = this.saldo + valorRecibido;
 	}
 	
 
