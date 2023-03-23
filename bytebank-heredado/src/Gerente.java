@@ -17,6 +17,6 @@ public class Gerente extends Funcionario{
 	public double getBonificación() {
 		System.out.println("EJECUTANDO DESDE GERENTE");
 		//Ahora el gerente gana el porcentaje aplicado al funcionario más su salario
-		return super.getSalario() + super.getBonificación();
+		return super.getSalario() + this.getSalario()*0.05;
 	}
 }

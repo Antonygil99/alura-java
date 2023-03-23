@@ -43,10 +43,7 @@ public abstract class Funcionario {//al ser abstract deja de ser un objeto físi
 	}
 	
 	//Bonificacion del 10%
-	public double getBonificación() {
-		return this.Salario * 0.05;
-	}
-
+	public abstract double getBonificación();
 
 	public int getTipo() {
 		return tipo;
