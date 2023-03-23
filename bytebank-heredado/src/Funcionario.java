@@ -1,5 +1,5 @@
 
-public class Funcionario {
+public abstract class Funcionario {//al ser abstract deja de ser un objeto físico e instanceable
 	private String nombre;
     private String Documento;
 	private double Salario;
