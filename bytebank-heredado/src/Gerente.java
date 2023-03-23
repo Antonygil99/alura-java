@@ -2,21 +2,13 @@
 //-----------------extiende de---------------
 
 // NOS ENCONTRAMOS EN LA CLASE HIJA DE FUNCIONARIO.
-public class Gerente extends Funcionario{
+public class Gerente extends FuncionarioAutenticar{
 	
-	private String clave;
-	
-	public void setClave(String vclave) {
-		this.clave = vclave;
-	}
-	
-	public boolean login(String clave) {
-		return clave == "AluraCurso";
-	}
+
 	//SOBREESCRITURA DE METODO - REESCRIBIENDO EL METODO EN LA CLASE HIJA
 	public double getBonificación() {
 		System.out.println("EJECUTANDO DESDE GERENTE");
 		//Ahora el gerente gana el porcentaje aplicado al funcionario más su salario
-		return super.getSalario() + this.getSalario()*0.05;
+		return 2000;
 	}
 }
