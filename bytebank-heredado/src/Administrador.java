@@ -1,5 +1,5 @@
 
-public class Administrador extends FuncionarioAutenticar {
+public class Administrador extends Autenticable {
 //el extends sive para ser hijo de un solo padre
 	@Override 
 	public double getBonificación() {

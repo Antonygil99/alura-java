@@ -2,7 +2,7 @@
 //-----------------extiende de---------------
 
 // NOS ENCONTRAMOS EN LA CLASE HIJA DE FUNCIONARIO.
-public class Gerente extends FuncionarioAutenticar{
+public class Gerente extends Autenticable{
 	
 
 	//SOBREESCRITURA DE METODO - REESCRIBIENDO EL METODO EN LA CLASE HIJA

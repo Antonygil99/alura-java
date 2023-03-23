@@ -3,7 +3,7 @@ public class SistemaInterno {
 	
 	private String clave = "12345";
 	
-	public boolean auteticar(FuncionarioAutenticar gerente) {
+	public boolean auteticar(Autenticable gerente) {
 		boolean puedeIniciarSesion = gerente.login(clave);
 		if (puedeIniciarSesion) {
 			System.out.println("Login exitoso");
