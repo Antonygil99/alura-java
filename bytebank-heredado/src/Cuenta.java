@@ -21,7 +21,7 @@ public class  Cuenta {
 //			this.agencia = agencia;
 //		}
 		
-		System.out.println("Se han creado: " + total +" cuentas");
+		System.out.println("Se han creado: " + (Cuenta.total+1) +" cuentas");
 		Cuenta.total++;
 		
 	}
@@ -35,7 +35,7 @@ public class  Cuenta {
 	//Método con retorno
 	public boolean retirar (double valorRecibido) {
 		if (this.saldo >= valorRecibido) {
-			this.saldo = this.saldo - valorRecibido;
+			this.saldo -= valorRecibido;
 			return true;
 			
 		}
@@ -48,7 +48,7 @@ public class  Cuenta {
 	
 	public boolean transferir (double valorRecibido , Cuenta Cuenta) {
 		if (this.saldo >= valorRecibido) {
-			this.saldo = this.saldo - valorRecibido;
+			this.retirar(valorRecibido);
 			//Referenciando objetos
 			Cuenta.depositar(valorRecibido);//depositamos el valor a la cuenta deseada
 			return true;
