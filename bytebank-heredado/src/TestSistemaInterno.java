@@ -5,6 +5,7 @@ public class TestSistemaInterno {
 		Gerente gerente1 = new Gerente();
 		Administrador admin = new Administrador();
 		
+		
 		sistema.auteticar(gerente1);
 		sistema.auteticar(admin);
 	}

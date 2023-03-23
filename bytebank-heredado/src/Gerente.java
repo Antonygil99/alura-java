@@ -2,7 +2,7 @@
 //-----------------extiende de---------------
 
 // NOS ENCONTRAMOS EN LA CLASE HIJA DE FUNCIONARIO.
-public class Gerente extends Autenticable{
+public class Gerente extends Funcionario implements Autenticable{
 	
 
 	//SOBREESCRITURA DE METODO - REESCRIBIENDO EL METODO EN LA CLASE HIJA
@@ -10,5 +10,23 @@ public class Gerente extends Autenticable{
 		System.out.println("EJECUTANDO DESDE GERENTE");
 		//Ahora el gerente gana el porcentaje aplicado al funcionario más su salario
 		return 2000;
+	}
+
+	@Override
+	public void setClave(String vclave) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean login(String clave) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public double getBonificacion() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
