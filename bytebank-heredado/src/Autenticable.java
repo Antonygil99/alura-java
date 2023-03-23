@@ -1,9 +1,9 @@
 
-public interface Autenticable {
+public interface Autenticable {//toda interfaz es abstracta
 
-	public abstract void setClave(String vclave);
+	public void setClave(String vclave);
 	
-	public abstract boolean login(String clave);
+	public boolean login(String clave);
 	
 	public double getBonificacion();
 	

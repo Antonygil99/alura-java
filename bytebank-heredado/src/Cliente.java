@@ -4,6 +4,8 @@ public class Cliente implements Autenticable{
 	private String documento;
 	private String telefono;
 	
+	private String clave;
+	
 	//generamos getter y setters desde la pestaña Source de eclipse
 	public String getNombre() {
 		return nombre;
@@ -27,11 +29,15 @@ public class Cliente implements Autenticable{
 	@Override
 	public void setClave(String vclave) {
 		// TODO Auto-generated method stub
+		this.clave=vclave;
 		
 	}
 	@Override
 	public boolean login(String clave) {
 		// TODO Auto-generated method stub
+		if (this.clave==clave) {
+			return true;
+		}
 		return false;
 	}
 	@Override
