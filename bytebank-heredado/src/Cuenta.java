@@ -1,10 +1,10 @@
 //entidad cuenta:
-public class  Cuenta {
+public abstract class  Cuenta {
 	
-	private double saldo;//encapsulamiento, nadie puede modificar directamente el saldo
+	protected double saldo;//encapsulamiento, nadie puede modificar directamente el saldo
 	private int agencia;
 	private int numero;
-	private Cliente titular = new Cliente();//Referencia objetos
+	private Cliente titular = new Cliente();//Referencia objetos no abstractos al ser Cuenta una clase madre asbtracta
 	//contador de cuentas
 	private static int total = 0;//static dice que esta variable no pertenece a la instancia
 
@@ -26,11 +26,11 @@ public class  Cuenta {
 		
 	}
 	
-	public void depositar (double valorRecibido){
-		//uso this
-		this.saldo = this.saldo + valorRecibido;
-		
-	}
+	public abstract void depositar (double valorRecibido);
+//		//uso this
+//		this.saldo = this.saldo + valorRecibido;
+//		
+//	}
 	
 	//Método con retorno
 	public boolean retirar (double valorRecibido) {

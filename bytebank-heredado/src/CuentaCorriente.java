@@ -10,5 +10,11 @@ public class CuentaCorriente extends Cuenta {
 		double comision = 0.2;
 		return super.retirar(valorRecibido + comision);
 	}
+
+	@Override
+	public void depositar(double valorRecibido) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
