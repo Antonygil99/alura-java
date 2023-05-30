@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class ArrayLists_MetodosAdicionales {
 	/**
@@ -21,11 +22,19 @@ public class ArrayLists_MetodosAdicionales {
 		
 		System.out.println(cursos);
 		
-		//Método de ordenamiento de menor a mayor Ascendente con la clase collection
-		Collections.sort(cursos);
+//		//Método de ordenamiento de menor a mayor Ascendente con la clase collection
+//		Collections.sort(cursos);
+//		System.out.println(cursos);
+//		//Método de ordenamiento de menor a mayor Descendente
+//		Collections.sort(cursos, Collections.reverseOrder());
+//		System.out.println(cursos);
+		
+		//Método de ordenaniento Descendente con la clase comparator usando la clase ArraList<>
+		cursos.sort(Comparator.reverseOrder());
 		System.out.println(cursos);
-		//Método de ordenamiento de menor a mayor Descendente
-		Collections.sort(cursos, Collections.reverseOrder());
+		
+		//Método de ordenaniento Ascendente con la clase comparator usando la clase ArraList<>
+		cursos.sort(Comparator.naturalOrder());
 		System.out.println(cursos);
 		
 	}
