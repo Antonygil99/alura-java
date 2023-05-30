@@ -1,6 +1,6 @@
 package com.alura;
 
-public class Curso {
+public class Curso implements Comparable<Curso> {
 	
 	private String nombre;
 	private int tiempo;
@@ -30,6 +30,12 @@ public class Curso {
 	@Override
 	public String toString() {
 		return this.nombre;
+	}
+
+	@Override
+	public int compareTo(Curso o) {
+		// TODO Auto-generated method stub
+		return this.nombre.compareTo(o.getNombre());
 	}
 	
 	
