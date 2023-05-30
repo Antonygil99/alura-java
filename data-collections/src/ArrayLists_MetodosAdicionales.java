@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrayLists_MetodosAdicionales {
 	/**
@@ -29,13 +31,16 @@ public class ArrayLists_MetodosAdicionales {
 //		Collections.sort(cursos, Collections.reverseOrder());
 //		System.out.println(cursos);
 		
-		//Método de ordenaniento Descendente con la clase comparator usando la clase ArraList<>
-		cursos.sort(Comparator.reverseOrder());
-		System.out.println(cursos);
+//		//Método de ordenaniento Descendente con la clase comparator usando la clase ArraList<>
+//		cursos.sort(Comparator.reverseOrder());
+//		System.out.println(cursos);
+//		
+//		//Método de ordenaniento Ascendente con la clase comparator usando la clase ArraList<>
+//		cursos.sort(Comparator.naturalOrder());
+//		System.out.println(cursos);
 		
-		//Método de ordenaniento Ascendente con la clase comparator usando la clase ArraList<>
-		cursos.sort(Comparator.naturalOrder());
-		System.out.println(cursos);
+		List<String> cursosList = cursos.stream().sorted().collect(Collectors.toList());
+		System.out.println(cursosList);
 		
 	}
 }
