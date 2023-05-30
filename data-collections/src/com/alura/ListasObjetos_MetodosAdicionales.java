@@ -55,5 +55,9 @@ public class ListasObjetos_MetodosAdicionales {
 		 * System.out.println(cursos);
 		 */
 		
+		//Ignorando elemento de la lista
+		List<Curso> cursoList = cursos.stream().filter(curso -> !curso.getNombre().equalsIgnoreCase("Ruby")).sorted(Comparator.comparingInt(Curso::getTiempo)).collect(Collectors.toList());
+		System.out.println(cursoList);
+		
 	}
 }
