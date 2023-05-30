@@ -15,5 +15,9 @@ public class ArrayLists_Conociendo {
 		list.add(variable3);
 		list.add(variable4);
 		System.out.println(list);
+		
+		//removiendo variables de la lista
+		list.remove(3);
+		System.out.println(list);
 	}
 }
