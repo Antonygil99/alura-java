@@ -41,10 +41,19 @@ public class ListasObjetos_MetodosAdicionales {
 		/*
 		 * Para ser capaz de ordenar una lista de objetos con el metodo sort de la clase ArrayList
 		 * basta con añadir la siguiente linea de codigo:
-		 * Importante quitar la implementacion de la interfaz comparable<> en la clase curso
+			cursos.sort(Comparator.comparing(Curso::getNombre));
+			System.out.println(cursos);
 		 */
-		cursos.sort(Comparator.comparing(Curso::getNombre));
-		System.out.println(cursos);
+		
+		/*
+		 * Para implentar collections sin el uso de la implementación de la interfaz
+		 * Comparable<> se hace de la siguiente manera:
+		 * Collections.sort(cursos, Comparator.comparing(Curso::getNombre));
+		 * System.out.println(cursos);
+		 * 
+		 * Collections.sort(cursos, Comparator.comparing(Curso::getNombre).reversed());
+		 * System.out.println(cursos);
+		 */
 		
 	}
 }
