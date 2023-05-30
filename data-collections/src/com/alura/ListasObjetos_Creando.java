@@ -24,6 +24,10 @@ public class ListasObjetos_Creando {
 		
 		System.out.println(cursos);
 		
+		//Alternativa para añadir un curso a mi lista de clase curso
+		cursos.add(new Curso("Aritmetica", 40));
+		System.out.println(cursos);
+		
 
 		
 		
