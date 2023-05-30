@@ -19,5 +19,14 @@ public class ArrayLists_Conociendo {
 		//removiendo variables de la lista
 		list.remove(3);
 		System.out.println(list);
+		
+		//modificando variables de la lista
+		list.add(variable4);
+		list.set(0, "Ejemplo 1 alterado");
+		System.out.println(list);
+		
+		//tamaño de la lista
+		System.out.println("The list size is: "+list);
+		
 	}
 }
