@@ -5,7 +5,7 @@ public class TestSistemaInterno {
 		Gerente gerente1 = new Gerente();
 		Administrador admin = new Administrador();
 		
-		
+		gerente1.setClave("2022");
 		sistema.auteticar(gerente1);
 		sistema.auteticar(admin);
 	}

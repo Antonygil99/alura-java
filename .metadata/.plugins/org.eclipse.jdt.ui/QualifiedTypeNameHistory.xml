@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="Cliente"/>
     <fullyQualifiedTypeName name="CrearCuenta"/>
     <fullyQualifiedTypeName name="cuenta"/>
-    <fullyQualifiedTypeName name="Funcionario"/>
-    <fullyQualifiedTypeName name="Gerente"/>
     <fullyQualifiedTypeName name="ControlBonificacion"/>
     <fullyQualifiedTypeName name="Contador"/>
     <fullyQualifiedTypeName name="CuentaCorriente"/>
+    <fullyQualifiedTypeName name="CuentaAhorros"/>
+    <fullyQualifiedTypeName name="Gerente"/>
+    <fullyQualifiedTypeName name="Administrador"/>
+    <fullyQualifiedTypeName name="SistemaInterno"/>
+    <fullyQualifiedTypeName name="FuncionarioAutenticar"/>
+    <fullyQualifiedTypeName name="Autenticable"/>
+    <fullyQualifiedTypeName name="Funcionario"/>
+    <fullyQualifiedTypeName name="Cliente"/>
+    <fullyQualifiedTypeName name="AutenticacionUtil"/>
 </qualifiedTypeNameHistroy>
